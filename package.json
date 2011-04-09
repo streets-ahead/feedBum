@@ -1,0 +1,26 @@
+{
+	"name": "feedBum",
+	"description": "A port of the PHP project FeedWriter to Node.js.  This is a libary to help create RSS and ATOM feeds",
+	"version": "0.9",
+	"author": "Streets Ahead LLC<team@streetsaheadllc.com>",
+	"homepage": "http://streetsaheadllc.com",
+	"contributors": [
+		{ "name": "Sam Mussell", "email": "sam@streetsaheadllc.com" },
+		{ "name": "Terry Keeney", "email": "terry@streetsaheadllc.com" }
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://streets-ahead@github.com/streets-ahead/lazyBum.git" 
+	},
+	"keywords": ["RSS", "ATOM", "FeedWriter", "feed", "lazy", "bum", "Streets Ahead"],
+	"dependencies": {
+		"dateformat": ">= 1.0.0",
+	},
+	"directories": {
+    	"lib" : "./lib",
+		"bin" : "./bin",
+  	},
+	"bin": { "lazybum": "./bin/lazybum.js" },
+	"main": "./lib/feedBum.js",
+	"engines": { "node": ">= 0.4.4" }
+}
