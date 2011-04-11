@@ -14,9 +14,10 @@ testFeed.endResponse = function(data) {
 testFeed.setTitle('Testing the RSS writer class');
 testFeed.setLink('http://www.ajaxray.com/rss2/channel/about');
 
+
 //For other channel elements, use setChannelElement() function
-// testFeed.setChannelElement('updated', date(DATE_ATOM , time()));
 testFeed.setChannelElement('author', {'name' : 'Anis uddin Ahmad'});
+testFeed.setDate( (new Date()).getTime());
 
 //Adding a feed. Genarally this protion will be in a loop and add all feeds.
 
@@ -35,4 +36,4 @@ newItem.setDescription('This is test of adding CDATA Encoded description by the 
 testFeed.addItem(newItem);
 
 //OK. Everything is done. Now genarate the feed.
-testFeed.genarateFeed();
+console.log(testFeed.genarateFeed());
