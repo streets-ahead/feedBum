@@ -17,8 +17,7 @@
 		"dateformat": ">=1.0.0-1.2.3"
 	},
 	"directories": {
-    	"lib" : "./lib",
-		"bin" : "./bin"
+    	"lib" : "./lib"
   	},
 	"main": "./lib/feedBum.js",
 	"engines": { "node": ">= 0.4.4" }
